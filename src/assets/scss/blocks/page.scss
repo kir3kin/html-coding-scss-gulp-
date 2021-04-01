@@ -1,0 +1,42 @@
+.page {
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@include breakpoint($tablet-bp) {
+		.show-sidebar & {
+			position: relative;
+		}
+	}
+
+}
+
+.page__title {
+	margin-bottom: 3rem;
+
+	font-size: 2.1rem;
+	color: $textWhite;
+
+	&--center {
+		text-align: center;
+	}
+}
+
+.page__musk {
+	@include breakpoint($tablet-bp) {
+		.show-sidebar & {
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			background-color: rgba($black, .9);
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+	}
+}

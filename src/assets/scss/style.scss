@@ -1,0 +1,70 @@
+@import 'vendor/reset.scss';
+@import 'vars.scss';
+@import 'mixins.scss';
+
+html {
+	font-size: 62.5%;// при использовании рем
+}
+
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	background-color: $primary;
+	font-size: 1.4rem;
+	color: $textWhite;
+	line-height: 1.5;
+
+	&.show-sidebar {
+		@include breakpoint ($tablet-bp) {
+			overflow: hidden;
+		}
+	}
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// to hide overflow text
+// text-overflow: ellipsis;
+// overflow: hidden;
+// white-space: nowrap;
+
+/* Blocks */
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/burger';
+@import 'blocks/subnav';
+@import 'blocks/search';
+@import 'blocks/sidebar';
+@import 'blocks/profile';
+@import 'blocks/social';
+@import 'blocks/button';
+@import 'blocks/main';
+@import 'blocks/container';
+@import 'blocks/stories';
+@import 'blocks/addPost';
+@import 'blocks/post';
+@import 'blocks/embed';
+@import 'blocks/pagination';
+@import 'blocks/related';
+@import 'blocks/comments';
+@import 'blocks/form';
+@import 'blocks/work';
+@import 'blocks/tags';
+@import 'blocks/cabinet';
+@import 'blocks/modal';

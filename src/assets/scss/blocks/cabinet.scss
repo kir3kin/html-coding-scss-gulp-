@@ -1,0 +1,52 @@
+.cabinet {
+	display: flex;
+
+	@include breakpoint($mobile-bp) {
+		flex-direction: column-reverse;
+	}
+}
+
+.cabinet__form {
+	width: 34rem;
+	padding-right: 2rem;
+
+	@include breakpoint($mobile-bp) {
+		width: 100%;
+		padding-right: 0;
+	}
+}
+
+.cabinet__avatar {
+	flex-grow: 1;
+	text-align: center;
+
+	@include breakpoint($mobile-bp) {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	img {
+		display: block;
+		max-width: 15rem;
+		margin: 0 auto 1.5rem;
+
+		@include breakpoint($mobile-bp) {
+			margin-left: 0;
+		}
+	}
+}
+
+.cabinet__file {
+	font-size: 1.4rem;
+	color: $btnBlue;
+	cursor: pointer;
+	text-decoration: none;
+
+	input {
+		display: none;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

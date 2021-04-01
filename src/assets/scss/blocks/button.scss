@@ -1,0 +1,39 @@
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1.1em 2.1em;
+
+	background: $secondary;
+	border: none;
+	cursor: pointer;
+	border-radius: 3em;
+
+	font-family: inherit;
+	font-size: 1.2rem;
+	line-height: 1.1;
+	font-weight: 500;
+	color: $textWhite;
+	text-decoration: none;
+
+	transition: background-color.2s linear;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+
+	&--red {
+		@include btn($btnRed);
+	}
+
+	&--blue {
+		@include btn($btnBlue);
+	}
+
+	&--rounded {
+		border-radius: 0.41em;
+	}
+	&--sm {
+		padding: 0.7rem 1.25rem;
+	}
+}

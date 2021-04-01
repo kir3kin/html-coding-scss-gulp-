@@ -1,0 +1,164 @@
+---
+layout: default
+title: Post
+---
+
+<article class="post">
+	<div class="post__actions">
+		<a href="#">go back</a>
+		<a data-modal="share-modal" href="#">
+			share<img class="post__actions--icon" src="assets/images/icons/share.svg" alt="share">
+		</a>
+	</div>
+
+	<div class="post__header post_header--open">
+		<h1 class="post__title post__title--mb0">How to you write code quickly and painlessly?</h1>
+		<ul class="post__data">
+			<li class="post__data-item">
+				<time datetime="2021-05-21 19:20">21.05.2021</time>
+			</li>
+			<li class="post__data-item">
+				<a href="#">website creation</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="post__content">
+		<div class="post__text">
+			<h2>Title 2</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptatum temporibus error aut eligendi, tempora similique aspernatur. Cumque consequuntur et dolore nisi accusantium officiis eaque exercitationem, ab ea, vitae voluptatum voluptate, eos rem maiores ex rerum odit. Quas quidem ex, enim animi recusandae obcaecati voluptatum impedit sapiente nesciunt. Optio, quasi?</p>
+			<h3>Title 3</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptatum temporibus error aut eligendi, tempora similique aspernatur. Cumque consequuntur et dolore nisi accusantium officiis eaque exercitationem, ab ea, vitae voluptatum voluptate, eos rem maiores ex rerum odit. Quas quidem ex, enim animi recusandae obcaecati voluptatum impedit sapiente nesciunt. Optio, quasi?</p>
+			<h4>Title 4</h4>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptatum <a href="#">temporibus error aut eligendi</a>, tempora similique aspernatur. Cumque consequuntur et dolore nisi accusantium officiis eaque exercitationem, ab ea, vitae voluptatum voluptate, eos rem maiores ex rerum odit. Quas quidem ex, enim animi recusandae obcaecati voluptatum impedit sapiente nesciunt. Optio, quasi?</p>
+			<p>
+				<img src="assets/images/articles/content_exmp.jpg" alt="just content">
+			</p>
+
+			<ul>
+				<li>item</li>
+				<li>item</li>
+				<li>item</li>
+			</ul>
+			<ol>
+				<li>item</li>
+				<li>item</li>
+				<li>item</li>
+			</ol>
+
+			<table>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</table>
+
+			<p>
+				<span class="fr-video">
+					<iframe src="https://www.youtube.com/embed/p4zbV1MBJNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</span>
+			</p>
+		</div><!-- /.post__text -->
+
+		<div class="related">
+			<h3 class="related__title">Interesting to read</h3>
+
+			<ul class="related__list">
+				<li class="related__list-item">
+					<h4 class="related__list-title">
+						<a href="#">>How I went at FrontEnd Conf 2021</a>
+					</h4>
+					<time class="related__list-date" datetime="2021-05-21 19:22">21.05.21</time>
+				</li>
+				<li class="related__list-item">
+					<h4 class="related__list-title">
+						<a href="#">How to you write code quickly and painlessly?</a>
+					</h4>
+					<time class="related__list-date" datetime="2021-05-21 19:22">21.05.21</time>
+				</li>
+				<li class="related__list-item">
+					<h4 class="related__list-title">
+						<a href="#">Bought a new laptop for the 5000$ Bought a new laptop for the 5000$ Bought a new laptop for the 5000$</a>
+					</h4>
+					<time class="related__list-date" datetime="2021-05-21 19:22">21.05.21</time>
+				</li>
+				<li class="related__list-item">
+					<h4 class="related__list-title">
+						<a href="#">Bought a new laptop for the 5000$</a>
+					</h4>
+					<time class="related__list-date" datetime="2021-05-21 19:22">21.05.21</time>
+				</li>
+			</ul>
+		</div><!-- /.related -->
+
+		<div class="comments">
+			<h3 class="comments__title">Discussion</h3>
+			<form class="form" action="/">
+				<div class="form__group">
+					<textarea name="comment-text" class="form__control form__control--textarea" placeholder="Add a comment" data-autoresize></textarea>
+					<div class="form__line">
+						<span class="form__line-item"></span>
+						<span class="form__line-item"></span>
+					</div><!-- /.form__line -->
+				</div><!-- /.form__group -->
+				<button type="submit" class="btn btn--blue btn--rounded btn--sm">Send</button>
+			</form>
+			<ul class="comments__content">
+				<li class="comments__item">
+					<div class="comments__header">
+						<img class="comments__avatar" src="https://via.placeholder.com/30" alt="author avatar">
+						<div class="comments__author">
+							<div class="comments__name">Igor Ahabanin</div>
+							<time class="comments__pubdate" datetime="2021-12-21 19:21">1 week ago</time>
+						</div><!-- /.comments__author -->
+					</div><!-- /.comments__header -->
+					<div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci enim unde doloremque, quae aliquam aspernatur, saepe cum maxime eius fugiat, molestiae impedit veritatis obcaecati error accusantium nobis est dolore! Doloremque est voluptas in sint tempore debitis illum! Soluta, sapiente.</div>
+					<button type="button" class="comments__reply">answer</button>
+
+					<ul class="comments__content">
+						<li class="comments__item">
+							<div class="comments__header">
+								<img class="comments__avatar" src="https://via.placeholder.com/30" alt="author avatar">
+								<div class="comments__author">
+									<div class="comments__name">Igor Ahabanin</div>
+									<time class="comments__pubdate" datetime="2021-12-21 19:21">1 week ago</time>
+								</div><!-- /.comments__author -->
+							</div><!-- /.comments__header -->
+							<div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci enim unde doloremque, quae aliquam aspernatur, saepe cum maxime eius fugiat, molestiae impedit veritatis obcaecati error accusantium nobis est dolore! Doloremque est voluptas in sint tempore debitis illum! Soluta, sapiente.</div>
+							<button type="button" class="comments__reply">answer</button>
+
+							<ul class="comments__content">
+								<li class="comments__item">
+									<div class="comments__header">
+										<img class="comments__avatar" src="https://via.placeholder.com/30" alt="author avatar">
+										<div class="comments__author">
+											<div class="comments__name">Igor Ahabanin</div>
+											<time class="comments__pubdate" datetime="2021-12-21 19:21">1 week ago</time>
+										</div><!-- /.comments__author -->
+									</div><!-- /.comments__header -->
+									<div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci enim unde doloremque, quae aliquam aspernatur, saepe cum maxime eius fugiat, molestiae impedit veritatis obcaecati error accusantium nobis est dolore! Doloremque est voluptas in sint tempore debitis illum! Soluta, sapiente.</div>
+									<button type="button" class="comments__reply">answer</button>
+								</li><!-- /.comments__item--inside -->
+							</ul><!-- /.comments__content--inside -->
+						</li><!-- /.comments__item--inside -->
+					</ul><!-- /.comments__content--inside -->
+				</li><!-- /.comments__item -->
+
+				<li class="comments__item">
+					<div class="comments__header">
+						<img class="comments__avatar" src="https://via.placeholder.com/30" alt="author avatar">
+						<div class="comments__author">
+							<div class="comments__name">Igor Ahabanin</div>
+							<time class="comments__pubdate" datetime="2021-12-21 19:21">1 week ago</time>
+						</div><!-- /.comments__author -->
+					</div><!-- /.comments__header -->
+					<div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci enim unde doloremque, quae aliquam aspernatur, saepe cum maxime eius fugiat, molestiae impedit veritatis obcaecati error accusantium nobis est dolore! Doloremque est voluptas in sint tempore debitis illum! Soluta, sapiente.</div>
+					<button type="button" class="comments__reply">answer</button>
+				</li><!-- /.comments__item -->
+			</ul><!-- /.comments__content -->
+
+		</div><!-- /.comments -->
+
+	</div><!-- /.post__content -->
+</article><!-- /.post 2 -->
