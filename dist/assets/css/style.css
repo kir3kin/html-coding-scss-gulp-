@@ -1380,7 +1380,7 @@ a:hover {
     cursor: pointer;
     color: #3137c9;
     font-family: inherit;
-    font-style: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .comments__reply:hover {

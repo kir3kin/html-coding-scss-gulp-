@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="assets/css/style.min.css">
@@ -66,7 +66,7 @@
 					</ul>
 				</nav>
 				<form class="search" action="search.html" method="get">
-					<input class="search__input" type="text" placeholder="Search" name="" id="">
+					<input class="search__input" type="text" placeholder="Search">
 				</form>
 			</div>
 		</header>
@@ -157,22 +157,22 @@
 				<!-- Stories -->
 				<div class="stories">
 					<div class="stories__item" data-modal="story-modal">
-						<img class="stories__preview" src="assets/images/stories/Rectangle 4.jpg" alt="">
+						<img class="stories__preview" src="assets/images/stories/Rectangle-4.jpg" alt="">
 						<div class="stories__title">Relax in nature</div>
 						<time class="stories__date" datetime="2021-09-23 17:31">23.09.2021</time>
 					</div>
 					<div class="stories__item" data-modal="story-modal">
-						<img class="stories__preview" src="assets/images/stories/Rectangle 3.jpg" alt="">
+						<img class="stories__preview" src="assets/images/stories/Rectangle-3.jpg" alt="">
 						<div class="stories__title">Finishing a difficult project</div>
 						<time class="stories__date" datetime="2021-09-23 17:31">15.09.2021</time>
 					</div>
 					<div class="stories__item" data-modal="story-modal">
-						<img class="stories__preview" src="assets/images/stories/Rectangle 2.jpg" alt="">
+						<img class="stories__preview" src="assets/images/stories/Rectangle-2.jpg" alt="">
 						<div class="stories__title">Moved into a new apartment</div>
 						<time class="stories__date" datetime="2021-09-23 17:31">11.09.2021</time>
 					</div>
 					<div class="stories__item" data-modal="story-modal">
-						<img class="stories__preview" src="assets/images/stories/Rectangle 1.jpg" alt="">
+						<img class="stories__preview" src="assets/images/stories/Rectangle-1.jpg" alt="">
 						<div class="stories__title">Autumn has come!</div>
 						<time class="stories__date" datetime="2021-09-23 17:31">28.08.2021</time>
 					</div>
@@ -180,7 +180,7 @@
 				
 				<!-- Add post -->
 				<div class="add-post">
-					<form action="" method="post" class="add-post__form">
+					<form action="#" method="post" class="add-post__form">
 						<textarea data-autoresize class="add-post__textarea" name="post-text" placeholder="Write something"></textarea>
 						<div class="add-post__form--actions">
 							<label class="add-post__file" for="add-post-file">
@@ -237,8 +237,8 @@
 				
 				<article class="post">
 					<div class="post__header">
-						<div class="embed">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/stFOy0Noahg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="embed" data-video="youtube">
+							
 						</div>
 					</div>
 				
@@ -317,7 +317,7 @@
 
 	<div class="modal" id="story-modal">
 		<div class="modal__content modal__content--story">
-			<video class="modal__video" poster="https://via.placeholder.com/420x580" src=""></video>
+			<video class="modal__video" poster="https://via.placeholder.com/420x580"></video>
 		</div>
 	</div><!-- /.modal -->	<div class="modal" id="contact-modal">
 		<div class="modal__content modal__content--contact">
@@ -326,7 +326,7 @@
 				<img src="assets/images/icons/closeModal.svg" alt="Close">
 			</button>
 	
-			<form action="" method="post" class="form">
+			<form method="post" class="form">
 				<div class="form__group form__group--md">
 					<input type="text" placeholder="Enter your name" class="form__control">
 					<span class="form__line"></span>
