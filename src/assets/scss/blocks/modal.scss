@@ -23,7 +23,7 @@
 .modal__content {
 	width: 100%;
 	max-width: 500px;
-	padding: 8rem;
+	padding: 6rem 8rem;
 	position: relative;
 
 	background-color: $primary;
@@ -34,7 +34,7 @@
 	// transition: transform .3s ease-in-out, opacity .3s linear;
 
 	&--contact {
-		padding-bottom: 2.5rem;
+		padding-bottom: 4rem;
 	}
 
 	&--story {

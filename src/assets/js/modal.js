@@ -3,6 +3,7 @@ const modalWindows = {
 	modalBtn: document.querySelectorAll('[data-modal]'),
 	modalClose: document.querySelectorAll('.modal__close'),
 	modalWrapp: document.querySelectorAll('.modal'),
+	modalStoryImage: document.querySelector('.modal__video'),
 
 	modalContentProp: {
 		translateY: -50,//px
@@ -28,6 +29,11 @@ const modalWindows = {
 		}, this.modalContentProp.closeTime)
 	},
 
+	changeStoryImage(target) {
+		const imagePath = target.querySelector('img').getAttribute('src')
+		this.modalStoryImage.setAttribute('poster', imagePath)
+	},
+
 	init() {
 		this.modalBtn.forEach(item => {
 			item.addEventListener('click', e => {
@@ -43,6 +49,12 @@ const modalWindows = {
 					modalContent.style.transform = 'none'
 					modalContent.style.opacity = 1
 				}, 0)
+
+
+				if (e.currentTarget.getAttribute('data-modal') === 'story-modal') {
+					this.changeStoryImage(e.currentTarget)
+				}
+
 			})
 		})
 

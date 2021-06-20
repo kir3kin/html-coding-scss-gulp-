@@ -68,7 +68,13 @@ body {
     line-height: 1.5;
 }
 
-body.show-sidebar, body.no-scroll {
+@media (max-width: 991px) {
+    body.show-sidebar {
+        overflow: hidden;
+    }
+}
+
+body.no-scroll {
     overflow: hidden;
 }
 
@@ -244,6 +250,7 @@ a:hover {
     line-height: 1.2;
     text-transform: uppercase;
     color: #fff;
+    white-space: nowrap;
     -webkit-transition: background-color .2s linear;
     transition: background-color .2s linear;
 }
@@ -293,6 +300,7 @@ a:hover {
     border: none;
     font-size: 0;
     color: transparent;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 1.5rem;
@@ -312,10 +320,8 @@ a:hover {
 
 .burger:before, .burger:after {
     content: '';
-    -webkit-transition: -webkit-transform .2s linear;
-    transition: -webkit-transform .2s linear;
-    transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 .burger:before {
@@ -632,6 +638,13 @@ a:hover {
 @media (max-width: 991px) {
     .social {
         display: none;
+    }
+
+    .modal__content .social {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
     }
 }
 
@@ -1724,37 +1737,51 @@ a:hover {
 .modal__content {
     width: 100%;
     max-width: 500px;
-    padding: 8rem;
+    padding: 6rem 8rem;
     position: relative;
     background-color: #202020;
     border-radius: 5px;
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-    -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-in-out;
-    transition: opacity .3s linear, -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, opacity .3s linear;
-    transition: transform .3s ease-in-out, opacity .3s linear, -webkit-transform .3s ease-in-out;
 }
 
 .modal__content--contact {
-    padding-bottom: 2.5rem;
+    padding-bottom: 4rem;
 }
 
 .modal__content--story {
+    max-width: 42rem;
+    max-height: 58rem;
     padding: 0;
     background-color: transparent;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .modal__content--story {
+        max-width: 32rem;
+        max-height: 44rem;
+    }
 }
 
 @media (max-width: 575px) {
     .modal__content {
-        padding: 5rem 3rem 3rem;
+        padding: 5rem 3rem 5rem;
+    }
+
+    .modal__content--story {
+        max-width: 24rem;
+        max-height: 33rem;
+        padding: 0;
     }
 }
 
 .modal__video {
     display: block;
     margin: 0 auto;
+    width: 100%;
 }
 
 .modal__close {
@@ -1771,10 +1798,10 @@ a:hover {
     opacity: .5;
     -webkit-transform-origin: center;
     transform-origin: center;
-    -webkit-transition: opacity .2s linear,-webkit-transform .2s linear;
-    transition: opacity .2s linear,-webkit-transform .2s linear;
-    transition: opacity .2s linear,transform .2s linear;
-    transition: opacity .2s linear,transform .2s linear,-webkit-transform .2s linear;
+    -webkit-transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear, -webkit-transform .2s linear;
 }
 
 .modal__close:hover {
@@ -1812,7 +1839,7 @@ a:hover {
 
 @media (max-width: 575px) {
     .modal__footer {
-        margin-top: 2rem;
+        margin-top: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
